@@ -117,7 +117,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         device_registry.async_get_or_create(
             config_entry_id=entry.entry_id,
             identifiers={(DOMAIN, device.id)},
-            manufacturer="Tuya",
+            manufacturer="Tuya_custom",
             name=device.name,
             model=f"{device.product_name} (unsupported)",
         )
